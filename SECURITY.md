@@ -7,7 +7,7 @@ If you find a security vulnerability in any of the projects under this repositor
 Please follow these steps to report a security vulnerability:
 
 1. **Do not open a GitHub issue** for security vulnerabilities.
-2. Instead, please email the project maintainers directly at [your-email@example.com] with details about the vulnerability.
+2. Instead, please email the project maintainers directly at [nirmalnaveen95@gmail.com] with details about the vulnerability.
 
 We will acknowledge the report as quickly as possible and work on a fix as soon as possible. We take security very seriously and will do everything we can to ensure that any vulnerabilities are dealt with in a timely manner.
 
