@@ -15,13 +15,6 @@ We will acknowledge the report as quickly as possible and work on a fix as soon 
 
 For each version of the project, please check the repository to see if it is still maintained and supported. If you're using a version that is no longer supported, we strongly encourage you to upgrade to the latest version.
 
-## Security Updates
-
-Security updates for each version of this project are released when vulnerabilities are discovered. To stay informed about security updates:
-
-- Watch the repository for release notifications.
-- Check the [Releases](https://github.com/[YourUser]/aws-projects/releases) page periodically for new security patches and updates.
-
 ## Secure Code Practices
 
 To help keep this project secure, we follow best practices for secure coding:
