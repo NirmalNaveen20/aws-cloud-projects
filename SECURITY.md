@@ -11,10 +11,6 @@ Please follow these steps to report a security vulnerability:
 
 We will acknowledge the report as quickly as possible and work on a fix as soon as possible. We take security very seriously and will do everything we can to ensure that any vulnerabilities are dealt with in a timely manner.
 
-## Supported Versions
-
-For each version of the project, please check the repository to see if it is still maintained and supported. If you're using a version that is no longer supported, we strongly encourage you to upgrade to the latest version.
-
 ## Secure Code Practices
 
 To help keep this project secure, we follow best practices for secure coding:
