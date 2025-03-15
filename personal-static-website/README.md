@@ -24,7 +24,7 @@ Imagine you’re a recent graduate or a professional looking to showcase your sk
 
 The website will be hosted on AWS using the following components:
 
-- **Amazon S3**: Stores static website files (HTML, CSS, Image).
+- **Amazon S3**: Stores static website files (index.html, index.css, avatar.png).
 - **Amazon CloudFront**: Speeds up content delivery by caching static files closer to users.
 - **Amazon CloudWatch**: Monitors website performance and user interactions.
 
@@ -61,7 +61,6 @@ CloudWatch provides real-time monitoring for AWS resources and applications.
 
 - Go to the AWS S3 console.
 - Create a new bucket with a unique name.
-- Enable versioning for easy updates.
 - Upload `index.html`, `index.css`, and `avatar.png`.
 
 ### 2. Configure CloudFront
@@ -76,6 +75,8 @@ CloudWatch provides real-time monitoring for AWS resources and applications.
 
 - When you create the distribution, a yellow popup will appear at the top of your screen.
 
+![S3 Bucket Policy Popup](./readme-docs/popup.png)
+
 - Select "Copy policy."
 
 - Click "Go to S3 bucket permissions" to update the policy.
@@ -86,9 +87,31 @@ CloudWatch provides real-time monitoring for AWS resources and applications.
 
 - Save the changes.
 
+When the distribution finishes propagating your changes, the status column shows the Enabled status, and the Last modified column shows a date as shown
+
+![Cloudfront](./readme-docs/distribution-complete.png)
+
 ### 4. Access the Website
 
 - Open your CloudFront distribution URL: `https://your-cloudfront-id.cloudfront.net/`.
-- Set `index.html` as the default root object to remove the need for `/index.html` in the URL.
 
-By following these steps, you have successfully deployed a personal website using AWS!
+![Browser Visualization](./readme-docs/index.png)
+
+### 5. Monitoring the Website
+
+Your website is online, you can share the URL with other people and they will always have access to your latest CV. However, how do you know whether they actually accessed it, or whether they are having a good experience?
+You already know the answer; it’s CloudWatch metrics:
+
+- Navigate to the CloudWatch metrics console (https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#metricsV2)
+
+- In the Browse tab, you will find all kinds of AWS services. Select CloudFront, followed by Per-Distribution Metrics.
+
+![CloudWatch](./readme-docs/cloudwatch.png)
+
+- If you have more than one distribution, you will need to identify the relevant one by ID. If you just have one, select BytesDownloaded, Requests, 5xxErrorRate, and 4xxErrorRate.
+
+
+
+
+
+By following these steps, you have successfully deployed a static website using AWS!
