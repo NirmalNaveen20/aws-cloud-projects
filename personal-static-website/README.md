@@ -110,8 +110,8 @@ You already know the answer; it’s CloudWatch metrics:
 
 - If you have more than one distribution, you will need to identify the relevant one by ID. If you just have one, select BytesDownloaded, Requests, 5xxErrorRate, and 4xxErrorRate.
 
+## Cleaning up
 
+AWS resources incur costs. Although most services initially fall under the free tier, eventually that runs out, and you will incur costs. We recommend that you delete every application after you are done playing with it.
 
-
-
-By following these steps, you have successfully deployed a static website using AWS!
+#### By following these steps, you have successfully deployed a static website using AWS!
