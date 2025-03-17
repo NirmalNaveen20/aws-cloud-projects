@@ -1,4 +1,4 @@
-# Creating a Personal Website Using AWS
+# Deploy a Personal Website Using AWS
 
 ## Scenario
 
