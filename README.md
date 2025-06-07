@@ -1,7 +1,6 @@
 # AWS Cloud Projects
 
-Welcome to my **AWS Cloud Projects** repository!  
-This repository contains a collection of AWS cloud projects, including IaC, GitHub Actions automation, and standardized folder structures with guidelines for each project.
+This repository contains a collection of AWS cloud projects, including IaC, automation, and standardized folder structures with guidelines for each project.
 
 ## Features
 
